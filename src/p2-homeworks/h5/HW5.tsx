@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Routes from './Routes'
+/*import {HashRouter, Switch, Route, Redirect} from 'react-router-dom'*/
 
 function HW5() {
     return (
