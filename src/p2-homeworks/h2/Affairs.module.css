@@ -1,0 +1,19 @@
+.block {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.removeButton {
+    color: #000000;
+    background-color: #ff2f2f;
+    width: 70px;
+}
+
+.title {
+    padding: 2px;
+}
+
+.priority {
+
+}
