@@ -1,0 +1,52 @@
+.dropdown {
+    padding: 10px;
+}
+
+.dropbtn {
+    width: 50px;
+    height: 25px;
+    background-color: #c22c2c;
+}
+
+
+
+.pre_jun {
+    padding: 10px;
+    color: #ff2f2f;
+    text-decoration: none;
+}
+.pre_jun div {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ff2f2f;
+
+}
+.jun {
+    padding: 10px;
+    color: #ffac2f;
+    text-decoration: none;
+
+}
+.jun div {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ffac2f;
+}
+.jun_plus {
+    padding: 10px;
+    color: chartreuse;
+    text-decoration: none;
+
+}
+.jun_plus div {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: chartreuse;
+}
+
+
+
+
