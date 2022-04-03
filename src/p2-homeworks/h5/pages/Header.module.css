@@ -1,12 +1,39 @@
-.dropdown {
-    padding: 10px;
+
+
+/*.container.pre_jun {
+    position: absolute;
+    left: -100px;
+    transition: 0.45s;
+    padding: 15px;
+    width: 150px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
 }
 
-.dropbtn {
-    width: 50px;
-    height: 25px;
-    background-color: #c22c2c;
+.container.pre_jun:hover{
+    left: 0;
 }
+
+
+
+
+.pre_jun{
+    top: 20px;
+    background-color: #f44336;
+}
+.jun{
+    top: 80px;
+    background-color: #2196F3;
+}
+.jun_plus{
+    top: 140px;
+    background-color: #4CAF50;
+}*/
+
+
+
 
 
 
