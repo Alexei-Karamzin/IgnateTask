@@ -1,7 +1,7 @@
 import React from 'react'
-import PreJunior from "./pages/PreJunior";
-import JuniorPlus from "./pages/Junior+";
-import Junior from './pages/Junior';
+import PreJunior from "./pages/PreJunior/PreJunior";
+import JuniorPlus from "./pages/Junior+/Junior+";
+import Junior from './pages/Junior/Junior';
 import Error404 from "./pages/Error404";
 import {Navigate, Route, Routes } from 'react-router-dom';
 
