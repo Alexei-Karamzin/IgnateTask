@@ -1,0 +1,45 @@
+.formRadio {
+    margin-bottom: 10px;
+}
+.formRadio input[type=radio] {
+    display: none;
+}
+.formRadio label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 0;
+    line-height: 18px;
+    user-select: none;
+}
+.formRadio label:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background: url(https://snipp.ru/img/radio-1.png) 0 0 no-repeat;
+}
+
+/* Checked */
+.formRadio input[type=radio]:checked + label:before {
+    background: url(https://snipp.ru/img/radio-2.png) 0 0 no-repeat;
+}
+
+/* Hover */
+.formRadio label:hover:before {
+    filter: brightness(15%);
+}
+
+/* Disabled */
+.formRadio input[type=radio]:disabled + label:before {
+    filter: grayscale(100%);
+}
+
+.form {
+    width: 150px;
+    margin: 0 auto;
+}
