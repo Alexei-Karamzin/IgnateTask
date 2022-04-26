@@ -24,8 +24,9 @@ function HW8() {
     const [people, setPeople] = useState<UserType>(initialPeople)
 
     const finalPeople = people.map((p: PeopleType) => (
-        <div key={p._id}>
-            {p.name} || {p.age}
+        <div key={p._id} className={s.item}>
+            <span>{p.name}</span>
+            {p.age}
         </div>
     ))
 
@@ -34,17 +35,17 @@ function HW8() {
     const check = () => setPeople(homeWorkReducer(initialPeople, {type: 'check', payload: '18'}))
 
     return (
-        <div className={s.container}>
+        <div>
             <hr/>
             homeworks 8
 
             {/*should work (должно работать)*/}
             {finalPeople}
-
-            <div className={s.button}><SuperButton onClick={sortUp}>sort up</SuperButton></div>
-            <div className={s.button}><SuperButton onClick={sortDown}>sort down</SuperButton></div>
-            <div className={s.button}><SuperButton onClick={check}>check 18</SuperButton></div>
-
+            <div className={s.container}>
+                <SuperButton onClick={sortUp}>sort up</SuperButton>
+                <SuperButton onClick={sortDown}>sort down</SuperButton>
+                <SuperButton onClick={check}>check 18</SuperButton>
+            </div>
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativePeople/>*/}
