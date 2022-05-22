@@ -2,6 +2,7 @@ import React from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {useDispatch, useSelector} from "react-redux";
 import {loadingAC} from "./bll/loadingReducer";
+import classes from './HW10.module.css'
 import store from "./bll/store";
 
 function HW10() {
@@ -13,6 +14,7 @@ function HW10() {
     const setLoading = () => {
         dispatch(loadingAC())
         /*setTimeout(dispatch(loadingAC()), 1000)*/
+        setTimeout(()=>dispatch(loadingAC()), 1000)
         console.log('loading...')
     };
 
@@ -24,7 +26,12 @@ function HW10() {
             {/*should work (должно работать)*/}
             {loading
                 ? (
-                    <div>крутилка...</div>
+                    <div className={classes.ldsEllipsis}>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 ) : (
                     <div>
                         <SuperButton onClick={setLoading}>set loading...</SuperButton>

@@ -23,6 +23,6 @@ export const loadingReducer = (state = initState, action: actionType): stateType
     }
 }
 
-export const loadingAC = (): any => {
+export const loadingAC = (): actionType => {
     return {type: 'IS_LOADING'}
 } // fix any
