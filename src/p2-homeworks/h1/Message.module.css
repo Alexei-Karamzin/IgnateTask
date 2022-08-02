@@ -1,4 +1,4 @@
-.title {
+/*.title {
     position: relative;
     height: 80px;
     width: 225px;
@@ -6,9 +6,9 @@
     border-radius: 25px 25px 25px 0;
     margin: 10px 10px 50px 40px;
 
-}
+}*/
 
-.title::before {
+/*.title::before {
     content: "";
     position: absolute;
 
@@ -18,19 +18,126 @@
     width: 25px;
     border-top-left-radius: 25px;
     box-shadow: 0 -25px 0 0 #a43131;
+}*/
+
+* {
+
+}
+
+.main {
+    border: 1px solid red;
+    display: flex;
+    padding: 2px;
 }
 
 .avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: 15px;
-    padding-top: 80px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid red;
 }
 
-.name {
+.avatarContainer {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+
+.imessage {
+    border: 1px solid #9d9db7;
+    /*border-radius: 0.25rem;*/
+    display: flex;
+    flex-direction: column;
+    font-family: "SanFrancisco";
+    font-size: 1.25rem;
+    max-width: 600px;
+    padding: 0rem 0.7rem;
+}
+
+.imessage p {
+    border-radius: 1.15rem;
+    line-height: 1.25;
+    max-width: 75%;
+    padding: 0.5rem .875rem;
+    position: relative;
+    word-wrap: break-word;
+}
+.imessage p::before,
+.imessage p::after {
+    bottom: -0.1rem;
+    content: "";
+    height: 1rem;
+    position: absolute;
+}
+
+p.fromMe {
+    align-items: flex-start;
+    background-color: #13d305;
+    color: #000;
+}
+
+p.fromMe:before {
+    border-bottom-right-radius: 0.8rem 0.7rem;
+    border-left: 1rem solid #13d305;
+    left: -0.35rem;
+    transform: translate(0, -0.1rem);
+}
+
+p.fromMe::after {
+    background-color: #fff;
+    border-bottom-right-radius: 0.5rem;
+    left: 20px;
+    transform: translate(-30px, -2px);
+    width: 10px;
+}
+
+/*p.fromMe {
+    align-self: flex-end;
+    background-color: #248bf5;
+    color: #fff;
+}
+
+p.fromMe::before {
+    border-bottom-left-radius: 0.8rem 0.7rem;
+    border-right: 1rem solid #248bf5;
+    right: -0.35rem;
+    transform: translate(0, -0.1rem);
+}
+
+p.fromMe::after {
+    background-color: #fff;
+    border-bottom-left-radius: 0.5rem;
+    right: -40px;
+    transform:translate(-30px, -2px);
+    width: 10px;
+}*/
+
+
+/*p.fromMe ~ p.fromMe {
+    margin: 0.25rem 0 0;
+}
+
+p.fromMe ~ p.fromMe:not(:last-child) {
+    margin: 0.25rem 0 0;
+}
+
+p.fromMe ~ p.fromMe:last-child {
+    margin-bottom: 0.5rem;
+}*/
+
+
+
+
+
+
+
+/*.name {
     color: #4747e7;
     padding: 5px;
-}
+}*/
+/*
 .message {
     padding-top: 5px;
     padding-left: 5px;
@@ -41,8 +148,5 @@
 .time {
     color: #9d8787;
     padding-left: 170px;
-}
-.allTitle {
-    border: 1px solid red;
-    display: flex;
-}
+}*/
+

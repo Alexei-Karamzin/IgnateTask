@@ -10,12 +10,15 @@ type MessageType = {
 
 function Message(props: MessageType) {
     return (
-        <div className={classes.allTitle}>
-            <img className={classes.avatar} src={props.avatar} alt="Avatar"/>
-            <div className={classes.title}>
-                <div className={classes.name}>{props.name}</div>
-                <div className={classes.message}>{props.message}</div>
-                <div className={classes.time}>{props.time}</div>
+        <div className={classes.main}>
+            <div className={classes.avatarContainer}>
+                <img className={classes.avatar} src={props.avatar} alt="Avatar"/>
+            </div>
+            <div className={classes.imessage}>
+                {/*<div className={classes.name}>{props.name}</div>*/}
+                <p className={classes.fromMe}>{props.message}
+                    <div className={classes.time}>{props.time}</div>
+                </p>
             </div>
         </div>
 
